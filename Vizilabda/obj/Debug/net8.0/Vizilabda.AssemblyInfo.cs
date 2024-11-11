@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vizilabda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3d41707baf654daa225244966156bb64a0f917c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71471e555adc6ce0c0361a453efc251f748cf97c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vizilabda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vizilabda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
