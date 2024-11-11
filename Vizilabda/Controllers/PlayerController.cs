@@ -4,15 +4,16 @@ using Vizilabda.Models;
 
 namespace Vizilabda.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Players")]
     [ApiController]
     public class PlayerController : ControllerBase
     {
+        [HttpPost]
         public ActionResult<Player> Post(CreatePlayerDto createplayer)
         {
             var player = new Player
             {
-                Id=Guid.NewGuid(),
+                Id = Guid.NewGuid(),
                 Name = createplayer.Name,
                 Age = createplayer.Age,
                 Height = createplayer.Height,
@@ -30,5 +31,14 @@ namespace Vizilabda.Controllers
             }
             return BadRequest();
         }
+        [HttpGet]
+        public ActionResult<Player> Get() {
+            using (var context = new OlimpiaContext())
+            {
+                return Ok(context.Players.ToList());
+            }
+
+        }
+    
     }
 }

@@ -8,6 +8,7 @@ namespace Vizilabda.Controllers
     [ApiController]
     public class DataController : ControllerBase
     {
+        [HttpGet]
         public ActionResult<Data> Post(CreateDataDto createDto)
         {
             var data = new Data
