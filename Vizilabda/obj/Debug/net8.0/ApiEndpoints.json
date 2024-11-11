@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Vizilabda.Controllers.PlayerController",
+    "Method": "Post",
+    "RelativePath": "api/Player",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createplayer",
+        "Type": "Vizilabda.Models.CreatePlayerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Vizilabda.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
